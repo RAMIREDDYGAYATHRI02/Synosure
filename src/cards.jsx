@@ -22,9 +22,11 @@ const Cards = () => {
                 {item.Description}
               </Typography>
               <Box sx={{ display: "flex", justifyContent: "right", marginTop: "20px" }}>
-                <Link to="/event"><Button variant="contained" color="primary" >
-                  View More
-                </Button></Link>
+                <Link to={item.link}>
+                    <Button variant="contained" color="primary">
+                      View More
+                     </Button>
+                </Link>
              </Box>
             </CardContent>
           </Card>
